@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            body{
+                background: gray;
+            }
+            .header{
+                background-color: rgb(27, 27, 83);
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                position: fixed;
+            }
+            .logo{
+                color: white;
+                font-weight: bold;
+                font-size: 45px;
+                margin-top:20px ;
+                margin-bottom: 5px;
+            }
+            form{
+                margin-top:10px ;
+                margin-bottom: 10px;
+                margin-left: 50px;
+                
+                
+            }
+            .login-details{
+                width: 200px;
+                color: white;
+                float: left;
+                margin: 0 1px;
+
+            }
+            .btn-login{
+                color: white;
+                background-color: rgb(7, 7, 66);
+                margin-top:25px;
+
+            }
+            .forget-account{
+                color: rgb(158, 155, 144);
+                position: absolute;
+                margin-left: 201px;
+                padding-top: 1px;
+            }
+            .forget-account a{
+                text-decoration: none;
+                color:rgb(158, 155, 144); 
+                
+            }
+            .forget-account a:hover{
+                color:rgb(158, 155, 144); 
+            }
+            .main-content{
+                background: hsla(0, 0%, 50%,0.3);
+                display: flex;
+                padding-top:100px;
+            }
+            .image{
+                width:50%;
+                height: 700px;
+                
+            }
+            .pic-header{
+                width: 95%;
+                height: auto;
+                padding-left:45px;
+            }
+            img{
+                width: 95%;
+                height: 70%;
+                justify-content: center;
+                margin-bottom: 0;
+                padding-left:45px;
+                opacity: 0.6;
+            }
+            .section2{
+                width: 50%;
+                height: 630px;
+                padding: 0px 100px;
+            }
+            .content{
+                width: 400px;
+                height: 100%;
+                padding-left: 20px;
+        
+            }
+            .details{
+                margin-top: 20px;
+            }
+            .no-and-pass{
+                margin-top: 5px;
+                width: 94%;
+            }
+            .Month{
+                margin-top: 5px;
+                width: 99%;
+            }
+            footer{
+                width: 100%;
+                height: 150px;
+                background-color: gray;
+                position: fixed;
+                bottom: 0;
+            }
+            .birth-data{
+                margin-top: 10px;
+            
+            }
+            .btn-signup{
+                width: 150px;
+                height: 50px;
+                border-radius: 10px;
+                position: relative;
+                top: 10px;
+                left: 110px;
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+                background-color: turquoise;
+
+            }
+            .agreetment p{
+                margin-top: 20px;
+            }
+        </style>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="logo">facebook</div>
+            <div class="login-form">
+                <form>
+                    <label class="login-details">Email or Phone
+                        <input class="username" type="text">
+                    </label>
+                    
+                    <label class="login-details">Passord 
+                        <input type="password">
+                    </label>
+                    
+                    <button class="btn-login">Login</button>
+                    <p class="forget-account"><a href="#">Forgot account?</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="image">
+            <h3 class="pic-header">Connect with friends and the world around you on Facebook.</h3>
+                <img src="connect.jpg">
+            </div>
+            <div class="section2">
+                <div class="content">
+                    <div class="signup">
+                        <h1>Sign up</h1>
+                        <h4>it's quick and easy</h4>
+                        <div class="details">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                        <input class="no-and-pass" type="text" placeholder="Mobile number or email">
+                        <input class="no-and-pass" type="text" placeholder="New password">
+                    </div>
+                    </div>
+                    <div class="birth-data">
+                        <label for="Birthday">
+                            <label>Birthday</label>
+                        <input type="date"class="Month " name="Month"></input>
+                    </label>
+                        
+        
+                    </div>
+                    <div class="gender">
+                        <div class="gender">Gender</div>
+                        
+                        <label for="Female">
+                            
+                            <input type="radio" name="Female">Female
+                        </label>
+                        <label for="male">
+                            
+                            <input type="radio" name="Male">Male
+                        </label>
+                        <label for="male">
+                            
+                            <input type="radio" name="Custom">Custom
+                        </label>
+                            <p class="agreetment">
+                                By clicking Sign Up, you agree to our Terms,
+                                 Data Policy and Cookies Policy. 
+                                You may receive SMS 
+                                 from us and can opt out any time.
+                            </p>
+                            <button class="btn-signup">Sign Up</button>
+                        </div>
+
+                </div>
+               
+
+            </div>
+            <footer></footer>
+            
+
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+    
